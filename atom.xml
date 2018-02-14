@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://LJC0915.github.io/"/>
-  <updated>2018-02-14T06:17:36.000Z</updated>
+  <updated>2018-02-14T07:03:53.000Z</updated>
   <id>https://LJC0915.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Google Chrome Extensions</title>
+    <link href="https://LJC0915.github.io/2018/02/14/Google_Chrome_Extensions/"/>
+    <id>https://LJC0915.github.io/2018/02/14/Google_Chrome_Extensions/</id>
+    <published>2018-02-14T06:27:27.000Z</published>
+    <updated>2018-02-14T07:03:53.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>趁著過年來個大掃除</p><p>檢查自己所使用的extension並記錄下來，也把沒在使用的刪除</p><h2 id="List"><a href="#List" class="headerlink" title="List"></a>List</h2><ul><li><a href="https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg" target="_blank" rel="noopener">ColorPick Eyedropper</a></li><li><a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=zh-TW" target="_blank" rel="noopener">JSONView</a></li><li><a href="https://chrome.google.com/webstore/detail/pttchrome/hhnlfapopmaimdlldbknjdgekpgffmbo?hl=zh-TW" target="_blank" rel="noopener">PttChrome</a></li><li><a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=zh-TW" target="_blank" rel="noopener">React Developer Tools</a></li><li><a href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=zh-TW" target="_blank" rel="noopener">Redux DevTools</a></li><li><a href="https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg?hl=zh-TW" target="_blank" rel="noopener">FireShot</a></li><li><a href="https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg?hl=zh-TW" target="_blank" rel="noopener">The Great Suspender</a></li><li><a href="https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg?hl=zh-TW" target="_blank" rel="noopener">Wappalyzer</a></li></ul><h2 id="介紹"><a href="#介紹" class="headerlink" title="介紹"></a>介紹</h2><h3 id="ColorPick-Eyedropper"><a href="#ColorPick-Eyedropper" class="headerlink" title="ColorPick Eyedropper"></a>ColorPick Eyedropper</h3><p><a href="https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg" target="_blank" rel="noopener">Chrome Extension Link</a></p><p>用來吸取網頁顏色色碼的</p><p>點擊右上角 icon 再將滑鼠移動到你想要的顏色，即可顯示顏色，相當方便的小工具</p><h3 id="JSONView"><a href="#JSONView" class="headerlink" title="JSONView"></a>JSONView</h3><p><a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=zh-TW" target="_blank" rel="noopener">Chrome Extension Link</a></p><p>將 json 整齊的顯示出來 下圖簡單示範</p><p>一般狀況</p><p><img src="https://i.imgur.com/8Jnzc5q.png" alt="Screen Shot 2018-02-14 at 2.42.21 PM"></p><p>JSONView</p><p><img src="https://i.imgur.com/xS10TzC.png" alt="Screen Shot 2018-02-14 at 2.42.36 PM"></p><h3 id="PttChrome"><a href="#PttChrome" class="headerlink" title="PttChrome"></a>PttChrome</h3><p><a href="https://chrome.google.com/webstore/detail/pttchrome/hhnlfapopmaimdlldbknjdgekpgffmbo?hl=zh-TW" target="_blank" rel="noopener">Chrome Extension Link</a></p><p>在瀏覽器中直接使用PTT</p><h3 id="React-Developer-Tools"><a href="#React-Developer-Tools" class="headerlink" title="React Developer Tools"></a>React Developer Tools</h3><p><a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=zh-TW" target="_blank" rel="noopener">Chrome Extension Link</a></p><p>在 Inspector 模式中可以看到 React 的 dom 而非 render 過的 dom，以便觀察 React component 的 hierarchies</p><h3 id="Redux-DevTools"><a href="#Redux-DevTools" class="headerlink" title="Redux DevTools"></a>Redux DevTools</h3><p><a href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=zh-TW" target="_blank" rel="noopener">Chrome Extension Link</a></p><p>觀察 Redux 的好工具</p><h3 id="FireShot"><a href="#FireShot" class="headerlink" title="FireShot"></a>FireShot</h3><p><a href="https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg?hl=zh-TW" target="_blank" rel="noopener">Chrome Extension Link</a></p><p>網頁截圖的好工具</p><p>可以選擇整個頁面、可見範圍或自訂區域截圖</p><h3 id="The-Great-Suspender"><a href="#The-Great-Suspender" class="headerlink" title="The Great Suspender"></a>The Great Suspender</h3><p><a href="https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg?hl=zh-TW" target="_blank" rel="noopener">Chrome Extension Link</a></p><p>由於 Chrome 很會吃記憶體，於是我便找到這個東西。<br>他會自動暫停你閒置的分頁，可以經由設定調整時間、白名單以及其他狀況。</p><h3 id="Wappalyzer"><a href="#Wappalyzer" class="headerlink" title="Wappalyzer"></a>Wappalyzer</h3><p><a href="https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg?hl=zh-TW" target="_blank" rel="noopener">Chrome Extension Link</a></p><p>有時候會想知道這個網頁使用什麼東西寫的</p><p>這個extension 就會幫你偵測並顯示 雖然非100% 準確但夠用了</p><hr><p>以上是我常用的extension 如果大家有推薦的也歡迎在底下留言</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;趁著過年來個大掃除&lt;/p&gt;
+&lt;p&gt;檢查自己所使用的extension並記錄下來，也把沒在使用的刪除&lt;/p&gt;
+&lt;h2 id=&quot;List&quot;&gt;&lt;a href=&quot;#List&quot; class=&quot;headerlink&quot; title=&quot;List&quot;&gt;&lt;/a&gt;List&lt;/h2&gt;&lt;ul&gt;
+&lt;li
+      
+    
+    </summary>
+    
+    
+      <category term="Browser" scheme="https://LJC0915.github.io/tags/Browser/"/>
+    
+  </entry>
   
   <entry>
     <title>About This Blog</title>
