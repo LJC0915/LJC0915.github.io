@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://errollin.github.io/"/>
-  <updated>2018-02-05T02:24:36.000Z</updated>
+  <updated>2018-01-23T09:08:51.000Z</updated>
   <id>https://errollin.github.io/</id>
   
   <author>
@@ -15,34 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>draft</title>
-    <link href="https://errollin.github.io/2018/02/02/draft/"/>
-    <id>https://errollin.github.io/2018/02/02/draft/</id>
-    <published>2018-02-02T03:42:33.000Z</published>
-    <updated>2018-02-05T02:24:36.000Z</updated>
-    
-    <content type="html"><![CDATA[<hr><p>Whole pictures</p><ol><li>軟體項目成功之道</li><li>軟體構築美學</li><li>程式師修煉之道 – 從小工到專家 – 亨特</li><li>高效程式員的 45 個習慣－敏捷開發修煉之道</li><li>Clean Code</li><li>人月神話</li></ol><hr><p>重構三部曲</p><p>design pattern、單元測試、TDD</p><hr><p>學英文</p><hr><p>問問提</p><p><a href="https://ihower.tw/blog/archives/457" target="_blank" rel="noopener">提問的藝術</a></p><p>一個好的問題，或是說，讓人看的懂得問題<br>應該要包含四點：</p><ol><li>目的（你的程式要達成什麼目的？）</li><li>手段（你怎麼達成你的目的？）</li><li>錯誤（在什麼場景下發生的什麼錯誤？）</li><li>程式碼（有排版過的程式碼，拜託）</li></ol><hr><p>線上課程</p><p><a href="https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x" target="_blank" rel="noopener">cs50 on edx</a></p><p><a href="https://goo.gl/xyNQMU" target="_blank" rel="noopener">DSA 中國清華 on edx</a></p><p><a href="https://nthu-datalab.github.io/webapp/index.html" target="_blank" rel="noopener">Modern Web and App Programming 台灣清華</a></p><hr><h1 id="Scrum"><a href="#Scrum" class="headerlink" title="Scrum"></a>Scrum</h1><p><img src="https://en.wikipedia.org/wiki/Scrum_(software_development" alt="">#/media/File:Scrum_process.svg)</p><h2 id="Scrum-角色"><a href="#Scrum-角色" class="headerlink" title="Scrum 角色"></a>Scrum 角色</h2><ol><li>Development Team（Dev Team，開發團隊）：<ol><li>自組織的團隊，不需要任何人（包含 Scrum Master）就可以拆分『產品待辦清單』中故事為『潛在可發佈功能的功能迭代』（Increments of potentially releasable functionality）</li><li>能達到產品迭代中所要所有專業技能的『跨技能團隊』（Cross-Functional Team）</li><li>開發團隊中的所有成員都稱為開發者（Developer）</li><li>開發團隊中不會依照特殊專長而成立小團體</li><li>開發團隊中的成員或許有特殊專長或專精領域，但責任是全體開發團隊共同承擔</li><li>最佳開發團隊人數是 5~9 人，Vince 個人最理想的團隊人數是 6 位。</li></ol></li><li>Product Owner（PO，產品負責人）：<ol><li>負責釐清產品需求</li><li>排出『產品待辦清單』（Product Backlog）中故事（Story）優先順序</li><li>最佳化開發團隊的產出</li><li>確保產品待辦清單（Product Backlog）中的故事的可視化（visible），透明度（transparent）及下一步</li><li>讓開發團隊能清楚的了解產品待辦清單</li><li>唯一有權力要求開發團隊做事的人</li><li>設定故事驗收條件（Acceptance Criteria）</li><li>產品遠景的守門員</li><li>有權力中斷或停止開發週期中的『衝刺』（Sprint）</li></ol></li><li>ScrumMaster（SM，無中文名稱）：<ol><li>確保 Scrum 團隊中成員都充分了解 Scrum 並正確的實行 Scrum</li><li>僕人式領導（Servant-Leader for the Scrum Team）</li><li>和 PO 一起尋求最佳的產品待辦清單（Product Backlog）管理方式</li><li>和 PO 一起確保開發團隊能清楚的了解產品待辦清單</li><li>確保 PO 可以依『產品待辦清單』中故事的最佳價值來排序</li><li>幫忙 Scrum 事件的引導</li><li>幫忙建立自組織（Self-organization）及跨職能團隊（Cross-functionality Team）</li><li>幫忙移出開發團隊在開發過程中遭遇的障礙</li><li>與其他 Scrum Master 持續建立 Scrum 團隊及組織對 Scrum 的了解</li></ol></li></ol><h2 id="Scrum-物件"><a href="#Scrum-物件" class="headerlink" title="Scrum 物件"></a>Scrum 物件</h2><ol><li>Item（物件）：又稱 Story，是 PO 定義的產品產出。Item 大小要講究，要可以讓團隊在一般的速率下，可以完成3-5個。太多太繁雜，太少萬一沒做完就感覺整個 Sprint 一事無成，對團隊信心是個打擊。</li><li>c（工作）：是 Dev Team 針對 Item（不是 PO 也不是 SM 哦），列出完成 Item 所需的工作。工作分配是開發團隊自己安排。</li><li>Product Backlog（產品待辦清單）：由 PO 負責整理的產品願景圖，以 Item 為單位，施工順序由上而下。</li><li>Sprint Backlog（衝刺待辦清單）：Dev Team 向 PO 承諾這個 Sprint 會盡力完成的 Item List。以 Task 為單位。</li><li>Potentially Shippable Product Increment（潛在可交付產品增量）：開發團隊的產出，簡單的說就是 PO 說要上線就可以馬上上線的東西才算數。</li><li>Burndown Chart（燃盡圖）：有點類似怪物的血條，看看還剩多少血怪（Sprint Backlog）才死。以 Task 大小為單位。</li></ol><h2 id="Scrum活動"><a href="#Scrum活動" class="headerlink" title="Scrum活動"></a>Scrum活動</h2><ol><li>Sprint（衝刺）：顧名思義，當團隊決定要哪些 Item 後，就著手去衝。Sprint 長度定義上是1-4個禮拜，但實務上不要多過2個禮拜。而且 Sprint 長度應該要保持穩定盡可能不變。這樣才容易讓團隊掌握節奏，也容易預估和比較 Sprint 內的工作量。大原則是 Sprint 內的 Sprint Backlog 不改變（有原則就有例外）。</li><li><p>Daily Scrum（每日站立會議）：每天10-15分鐘不能超時，目的是讓團隊資訊同步。一定要站著罰站為了讓大家長話短說。主要功能是『檢視上次工作內容』及『預估下次工作內容』。『站立會議』最好是每日『同一時間』、『同一地點』、『同一團隊』的進行.在這個每日站立會議的過程中，團隊的所有成員分別會說明以下三個問題。</p><ol><li>對於完成團隊的衝刺目標，昨天做了什麼？（What did I do yesterday ?）</li><li>對於完成團隊的衝刺目標，今天打算做什麼？（What will I do today ?）</li><li>對於完成團隊的衝刺目標，是否有遭遇什麼困難需要團隊協助？（Any impediment that prevents team）</li></ol></li><li>Sprint Planning（衝刺規劃會議）：Sprint 開始時，討論一下這個 Sprint 團隊可以交付哪些Item。Item 優先順序 PO 決定，要選多少 Item 由 Dev Team 決定。</li><li>Product Backlog Refinement / PBR（產品待辦清單精煉會議）：PO 跟 Team 一起討論近期內會開始施工的 Item，主要是從商業和使用者角度切入，盡可能不觸及技術細節。</li><li>Sprint Review（衝刺檢視會議）：Sprint 結束時針對產品的會議，PO邀請利害關係人對產出給意見，是要可用的軟體才算產出。不準備Powerpoint或其他簡報，單純就軟體操作取得回饋。</li><li>Sprint Retrospective / Sprint Retro（衝刺回顧會議，我偏好稱為『自省』會議）：Sprint Review 後，Scrum Team 成員（Dev Team 或包含 PO），針對這個 Sprint 團隊的工作模式討論改善，并定出下個 Sprint 改善事項。為了創造一個安全的環境，原則上只有團隊成員才能參加。</li></ol><hr><h1 id="PM"><a href="#PM" class="headerlink" title="PM"></a>PM</h1><h2 id="Project-Manager"><a href="#Project-Manager" class="headerlink" title="Project Manager"></a>Project Manager</h2><p>技術層面上，Project Manager 就是把上司 / 業主 / 老闆心中想要的功能「翻譯」成工程師可以開發的 SPEC、確認功能可行性、與上司 / 業主 / 老闆確認 SPEC 細節、估時、排時程、確認優先順序、掌握開發進度、測試、驗收</p><p>溝通層面，如何在問題發生時，精準地搶時間、有效搶資源、適時地妥協時間、適當地妥協資源</p><h2 id="Product-Manager"><a href="#Product-Manager" class="headerlink" title="Product Manager"></a>Product Manager</h2><p>「好的 Product Manager 就是一個產品的 CEO」</p><p>身為一個 Product Manager 這些思考或方法的原點都是以「使用者」出發、產品是否解決使用者的痛點、是否真正滿足使用者需求。你要討好的對象不是老闆、不是團隊成員、不是投資者、不是合作廠商、而是「使用者」。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;hr&gt;
-&lt;p&gt;Whole pictures&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;軟體項目成功之道&lt;/li&gt;
-&lt;li&gt;軟體構築美學&lt;/li&gt;
-&lt;li&gt;程式師修煉之道 – 從小工到專家 – 亨特&lt;/li&gt;
-&lt;li&gt;高效程式員的 45 個習慣－敏捷開發修煉之道&lt;/li&gt;
-&lt;li&gt;Clean C
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>About This Blog</title>
@@ -64,27 +36,6 @@
     
     
       <category term="Hexo" scheme="https://errollin.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://errollin.github.io/2018/01/22/hello-world/"/>
-    <id>https://errollin.github.io/2018/01/22/hello-world/</id>
-    <published>2018-01-22T08:58:12.000Z</published>
-    <updated>2018-01-22T08:58:12.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
     
   </entry>
   
