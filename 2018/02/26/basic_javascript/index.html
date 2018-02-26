@@ -1,0 +1,338 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Javascript Note | LJC</title><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="author" content="[object Object]"><meta name="designer" content="minfive"><meta name="keywords" content="node.js, javascript"><meta name="description" content="先不自我介紹了"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="format-detection" content="telephone=yes"><meta name="mobile-web-app-capable" content="yes"><meta name="robots" content="all"><link rel="canonical" href="https://LJC0915.github.io/2018/02/26/basic_javascript/index.html"><link rel="icon" type="image/png" href="/img/favicon.ico" sizes="32x32"><link rel="stylesheet" href="/scss/base/index.css"><link rel="alternate" href="/atom.xml" title="LJC"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-106811045-2"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-106811045-2")</script><link rel="stylesheet" href="/scss/views/page/post.css"></head><body ontouchstart><div id="page-loading" class="page page-loading" style="background-image:url(http://oo12ugek5.bkt.clouddn.com/blog/images/loader.gif)"></div><div id="page" class="page js-hidden"><header class="page__small-header page__header--small"><nav class="page__navbar"><div class="page__container navbar-container"><a class="page__logo" href="/" title="LJC" alt="LJC"><img src="/img/logo.png" alt="LJC"></a><nav class="page__nav"><ul class="nav__list clearfix"><li class="nav__item"><a href="/" alt="Home" title="Home">Home</a></li><li class="nav__item"><a href="/archives" alt="Archive" title="Archive">Archive</a></li><li class="nav__item"><a href="/about" alt="About" title="About">About</a></li></ul></nav><button class="page__menu-btn" type="button"><i class="iconfont icon-menu"></i></button></div></nav></header><main class="page__container page__main"><div class="page__content"><article class="page__post"><div class="post__cover"><img src="http://www.actiwate.in/wp-content/uploads/2017/08/javascript-logo.jpg" alt="Javascript Note"></div><header class="post__info"><h1 class="post__title">Javascript Note</h1><div class="post__mark"><div class="mark__block"><i class="mark__icon iconfont icon-write"></i><ul class="mark__list clearfix"><li class="mark__item"><a href="https://LJC0915.github.io">LJC</a></li></ul></div><div class="mark__block"><i class="mark__icon iconfont icon-time"></i><ul class="mark__list clearfix"><li class="mark__item"><span>2018-02-26</span></li></ul></div><div class="mark__block"><i class="mark__icon iconfont icon-tab"></i><ul class="mark__list clearfix"><li class="mark__item"><a href="/tags/Javascript/">Javascript</a></li><li class="mark__item"><a href="/tags/Web/">Web</a></li></ul></div></div></header><div class="post__content"><h1 id="Javascript-Note"><a href="#Javascript-Note" class="headerlink" title="Javascript Note"></a>Javascript Note</h1><p>這是上課的簡易筆記</p><p>以供日後的查詢或複習</p><p>裡面記載了一些基礎的 javascript 知識</p><p>包括 elements 操作, Built-in Functions 的介紹 this 的注意事項 以及 Closures 的例子</p><p><code>window.onload</code> : 讀完 html 才跑 javascript,避免操作 dom時 該 element 還沒讀到</p><p>e.g.,</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// do something....</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>typeof</code> : check variable type, 型態檢查</p>
+<p>e.g.,</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="number">7</span>;</span><br><span class="line"><span class="keyword">typeof</span> i;</span><br></pre></td></tr></table></figure>
+<h2 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> user = &#123;</span><br><span class="line">    name: <span class="string">'Bob'</span>,</span><br><span class="line">    friends: [<span class="string">'Alice'</span>, <span class="string">'Paul'</span>],</span><br><span class="line">    greet: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'Hi, I am '</span> + <span class="keyword">this</span>.name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">user.name</span><br><span class="line">user[<span class="string">'name'</span>]</span><br><span class="line">user.greet()</span><br></pre></td></tr></table></figure>
+<h2 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h2><p><code>arguments</code> 是 javascript 內建的東西</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">arguments</span>[<span class="number">0</span>] + <span class="built_in">arguments</span>[<span class="number">1</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="High-Oreder-Function"><a href="#High-Oreder-Function" class="headerlink" title="High-Oreder Function"></a>High-Oreder Function</h3><p>白話文 : 吃 function 的 function</p>
+<p>e.g.,</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">forEach</span>(<span class="params">arr, f</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>;, i &lt; arr.length; i++ ) &#123;</span><br><span class="line">        f(arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">forEach([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>], <span class="built_in">console</span>.log);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Call 時不需加<code>()</code></li>
+</ul>
+<h3 id="Function-as-Method"><a href="#Function-as-Method" class="headerlink" title="Function as Method"></a>Function as Method</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">greet</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'Hi, I am '</span> + <span class="keyword">this</span>.name;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">greet();</span><br><span class="line"></span><br><span class="line"><span class="comment">// Hi, I am</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>this is window by default, 這裡的 this 是 window 這個 object</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> user &#123;</span><br><span class="line">    name: <span class="string">'Bob'</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">user.greet = greet;</span><br><span class="line">user.greet();</span><br><span class="line"></span><br><span class="line"><span class="comment">// Hi, I am Bob</span></span><br></pre></td></tr></table></figure>
+<h3 id="Function-as-Constructor"><a href="#Function-as-Constructor" class="headerlink" title="Function as Constructor"></a>Function as Constructor</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">User</span>(<span class="params">name, friends</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">    <span class="keyword">this</span>.friends = friends;</span><br><span class="line">    <span class="keyword">this</span>.greet = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;...&#125; ;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> user1 = <span class="keyword">new</span> User(<span class="string">'Bob'</span>, [<span class="string">'Alice'</span>, <span class="string">'Darren'</span>]);</span><br></pre></td></tr></table></figure>
+<h2 id="Identifying-Classes"><a href="#Identifying-Classes" class="headerlink" title="Identifying Classes"></a>Identifying Classes</h2><p>How to tell the class of object?</p>
+<p>因為用 <code>typeof</code> 都只會告訴你這是一個 object, 所以這裡就教你怎麼判斷一個 object 到底是什麼</p>
+<p>e.g.,</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>].constructor;</span><br><span class="line"><span class="keyword">new</span> <span class="built_in">Date</span>().constructor;</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="comment">// check</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isDate</span>(<span class="params">obj</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> obj.constructor == <span class="built_in">Date</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Literate"><a href="#Literate" class="headerlink" title="Literate"></a>Literate</h3><p>一個一個處理 object 的 value</p>
+<p>e.g.,</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>( <span class="keyword">var</span> prop <span class="keyword">in</span> obj) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(obj[prop]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Built-in-function"><a href="#Built-in-function" class="headerlink" title="Built-in function"></a>Built-in function</h2><h3 id="Type-Convension"><a href="#Type-Convension" class="headerlink" title="Type Convension"></a>Type Convension</h3><p>To string 轉字串</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span>(<span class="number">123</span>)         <span class="comment">//123</span></span><br><span class="line">(<span class="number">123</span>).toString()    <span class="comment">//123</span></span><br><span class="line">(<span class="number">123.45</span>).toFixed(<span class="number">2</span>) <span class="comment">//12.35</span></span><br></pre></td></tr></table></figure>
+<p>To number 轉數字</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Number</span>(<span class="string">'3.14'</span>)      <span class="comment">// 3.14</span></span><br><span class="line"><span class="built_in">Number</span>(<span class="literal">true</span>)        <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">Number</span>(<span class="string">'99 0'</span>)      <span class="comment">// NaN</span></span><br></pre></td></tr></table></figure>
+<h2 id="Timers"><a href="#Timers" class="headerlink" title="Timers"></a>Timers</h2><p>計時器</p>
+<p>每 X ms 執行一次 (1000ms = 1s)</p>
+<p>e.g.,</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">tick</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">new</span> <span class="built_in">Date</span>().getSeconds());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// call tick every 1s (1000ms)</span></span><br><span class="line"><span class="keyword">var</span> id = setInterval(tick, <span class="number">1000</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// stop tick</span></span><br><span class="line">clearInterval(id);</span><br></pre></td></tr></table></figure>
+<h2 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> user = &#123;</span><br><span class="line">    name:<span class="string">'Bob'</span>,</span><br><span class="line">    years: <span class="number">12</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// JSON to string</span></span><br><span class="line"><span class="keyword">var</span> json = <span class="built_in">JSON</span>.stringify(user);</span><br><span class="line"></span><br><span class="line"><span class="comment">// string to JSON</span></span><br><span class="line"><span class="keyword">var</span> user2 = <span class="built_in">JSON</span>.parse(json);</span><br></pre></td></tr></table></figure>
+<h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><p>Built-in Method</p>
+<p>Loop</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123; ... &#125;</span><br><span class="line"></span><br><span class="line">arr.forEach(f); <span class="comment">// High-Oreder function</span></span><br></pre></td></tr></table></figure>
+<h2 id="Built-in-Objects"><a href="#Built-in-Objects" class="headerlink" title="Built-in Objects"></a>Built-in Objects</h2><ul>
+<li><p>navigator</p>
+<ul>
+<li>About Browser</li>
+</ul>
+</li>
+<li><p>window</p>
+<ul>
+<li>About Tab</li>
+</ul>
+</li>
+<li><p>location</p>
+<ul>
+<li>About current URL</li>
+</ul>
+</li>
+</ul>
+<p>Use <code>console.dir(obj)</code> to see members</p>
+<h2 id="DOM-Manipulation-Process"><a href="#DOM-Manipulation-Process" class="headerlink" title="DOM Manipulation Process"></a>DOM Manipulation Process</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> el = <span class="built_in">document</span>.querySelector(<span class="string">'h1'</span>);</span><br><span class="line">el.style.color = <span class="string">'red'</span>;</span><br></pre></td></tr></table></figure>
+<p>element select 有下面幾種方式</p>
+<ul>
+<li><code>document.querySelector()</code></li>
+<li><code>document.querySelectAll()</code></li>
+<li><code>document.getElementById()</code></li>
+<li><code>document.getElementByClassName()</code></li>
+<li><code>document.getElementByTagName()</code></li>
+</ul>
+<p>Document 有下面幾個東西</p>
+<ul>
+<li><code>document.URL</code> 網址</li>
+<li><code>document.documentElement</code></li>
+<li><code>document.head</code></li>
+<li><code>document.body</code></li>
+<li><code>document.links</code> 所有的 links</li>
+</ul>
+<p>Element 有如下幾種操作</p>
+<ul>
+<li><code>el.style.color = &#39;red&#39;;</code> 用style 去操作 css</li>
+<li><code>el.classList.add(&#39;some-class&#39;);</code> 新增 class</li>
+<li><code>el.classList.remove(&#39;some-class&#39;);</code> 刪除 class</li>
+<li><code>el.classList.toggle(&#39;some-class&#39;);</code> 如果有該 class 刪除, 若沒有則新增</li>
+<li><code>el.textContent = &#39;Some text&#39;;</code> 加入 text 但就是字串 不是 HTML Tag</li>
+<li><code>el.innerHTML = &#39;Some HTML fragment&#39;;</code> 改寫裡面的 HTML</li>
+<li><code>el.getAttribute(&#39;href&#39;);</code> 取 Attribute</li>
+<li><code>el.setAttribute(&#39;src&#39;, &#39;http://...&#39;);</code> 設 Attribute</li>
+</ul>
+<h3 id="Form-Manipulation"><a href="#Form-Manipulation" class="headerlink" title="Form Manipulation"></a>Form Manipulation</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">"user-form"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"email"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">"sex"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"male"</span> <span class="attr">selected</span>=<span class="string">"selected"</span>&gt;</span>Male<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"female"</span>&gt;</span>Female<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">"major"</span> <span class="attr">multiple</span>=<span class="string">'multiple'</span> &gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"math"</span>&gt;</span>Math<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"cs"</span>&gt;</span>CS<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"ee"</span>&gt;</span>EE<span class="tag">&lt;/<span class="name">option</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">name</span>=<span class="string">"grade"</span> <span class="attr">value</span>=<span class="string">"A"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">name</span>=<span class="string">"grade"</span> <span class="attr">value</span>=<span class="string">"B"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">name</span>=<span class="string">"valid"</span> <span class="attr">value</span>=<span class="string">"valid"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> formEl = <span class="built_in">document</span>.getElementById(<span class="string">'user-form'</span>);</span><br><span class="line"><span class="keyword">var</span> emailEl = formEl.elements[<span class="string">'email'</span>];</span><br><span class="line">alert(mailEl.value);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> sexEl = formEl.elements[<span class="string">'sex'</span>]; alert(sexEl.options[sexEl.selectedIndex].value);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> majorEl = formEl.elements[<span class="string">'major'</span>];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; majorEl.options.length; i++) &#123;     </span><br><span class="line">    <span class="keyword">if</span>(majorEl.options[i].selected)</span><br><span class="line">        alert(majorEl.options[i].value);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> gradeEls = formEl.elements[<span class="string">'grade'</span>];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; gradeEls. length; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span>(gradeEls[i].checked)</span><br><span class="line">        alert(gradeEls[i].value);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> validEl = formEl.elements[<span class="string">'valid'</span>];</span><br><span class="line"><span class="keyword">if</span>(validEl.checked)</span><br><span class="line">alert(validEl.value);</span><br></pre></td></tr></table></figure>
+<h2 id="Event-Handling"><a href="#Event-Handling" class="headerlink" title="Event Handling"></a>Event Handling</h2><p>以 Button 為例子</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">el.onclick = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;...&#125;;</span><br><span class="line"></span><br><span class="line">el.addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;...&#125; );</span><br></pre></td></tr></table></figure>
+<p>上面的考量是可以覆蓋且唯一事件時使用 下面那個則是多事件需一起觸發時使用</p>
+<p>至於 function 裡面的 e 是 <a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank" rel="noopener">300多種的 event types</a></p>
+<h2 id="Be-careful-about-this"><a href="#Be-careful-about-this" class="headerlink" title="Be careful about this"></a>Be careful about <code>this</code></h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> user = &#123;</span><br><span class="line">  name: <span class="string">'Bob'</span>,</span><br><span class="line">  greet: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Hi, I am '</span> + <span class="keyword">this</span>.name);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">setInterval(user.greet, <span class="number">1000</span>);</span><br><span class="line"><span class="comment">// 'Hi, I am '</span></span><br></pre></td></tr></table></figure>
+<p><code>this</code> always binds to the ‘current owner’ of that function</p>
+<p><code>this</code> 就是看現在是誰 call 他的</p>
+<ol>
+<li><code>window</code>, when call as a function. 當直接呼叫當作 function 時, owner 是 window</li>
+<li><code>Object to which . is applied</code>, when called as a method. 當做 method 呼叫時, owner 是 Object</li>
+<li><code>Creating Object</code>, when called as a constructor.</li>
+</ol>
+<h3 id="Explicit-Binding"><a href="#Explicit-Binding" class="headerlink" title="Explicit Binding"></a>Explicit Binding</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> user = &#123;</span><br><span class="line">  name: <span class="string">'Bob'</span>,</span><br><span class="line">  greet: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Hi, I am '</span> + <span class="keyword">this</span>.name);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">setInterval(user.greet.bind(user), <span class="number">1000</span>);</span><br><span class="line"><span class="comment">// 'Hi, I am Bob'</span></span><br></pre></td></tr></table></figure>
+<h3 id="Call-with-Explicit-Binding"><a href="#Call-with-Explicit-Binding" class="headerlink" title="Call with Explicit Binding"></a>Call with Explicit Binding</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> user = &#123;</span><br><span class="line">  name: <span class="string">'Bob'</span>,</span><br><span class="line">  greet: <span class="function"><span class="keyword">function</span>(<span class="params">peer</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Hi '</span> + peer + <span class="string">', I am '</span> + <span class="keyword">this</span>.name);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> user2 = &#123;</span><br><span class="line">  name: <span class="string">'Alice'</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 'Hi John, I am Alice'</span></span><br><span class="line">user.greet.call(user2, <span class="string">'John'</span>);</span><br><span class="line">user.greet.apply(user2, [<span class="string">'John'</span>]); <span class="comment">// for delegation</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">greetFromAlice</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> user.greet.apply(user2, <span class="built_in">arguments</span>);</span><br><span class="line">&#125;</span><br><span class="line">greetFromAlice(<span class="string">'Paul'</span>) <span class="comment">// 'Hi Paul, I am Alice'</span></span><br></pre></td></tr></table></figure>
+<h2 id="Closures"><a href="#Closures" class="headerlink" title="Closures"></a>Closures</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* high-order function */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createShift</span>(<span class="params">i</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">j</span>) </span>&#123; <span class="comment">// closure</span></span><br><span class="line">        <span class="keyword">return</span> i + j;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> shift = createShift(<span class="number">100</span>);   <span class="comment">// set i</span></span><br><span class="line">shift(<span class="number">3</span>) <span class="comment">// 103</span></span><br></pre></td></tr></table></figure>
+<p>Closure is a function using variables defined in outer function that has returned</p>
+<p>Closure 用外部 function 變數的一個 function</p>
+<h3 id="Bad-Closures"><a href="#Bad-Closures" class="headerlink" title="Bad Closures"></a>Bad Closures</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> trs = <span class="built_in">document</span>.querySelectorAll(<span class="string">'tr'</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; trs.length; i++) &#123;</span><br><span class="line">  <span class="keyword">var</span> tr = trs[i];</span><br><span class="line">  tr.onmouseover = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      tr.classList.add(<span class="string">'row-over'</span>);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>這是一個表格 然後把每一個欄位都加上 mouseover 的效果,<br>但實際上 mouseover 只會改變最後一個 tr</p>
+<p>Fix</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> trs = <span class="built_in">document</span>.querySelectorAll(<span class="string">'tr'</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; trs.length; i++) &#123;</span><br><span class="line">    <span class="keyword">var</span> tr = trs[i];</span><br><span class="line">    tr.onmouseover = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.classList.add(<span class="string">'row-over'</span>);</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Good-Closures"><a href="#Good-Closures" class="headerlink" title="Good Closures"></a>Good Closures</h3><p>data 是一個根據 tr 而不同的 variable, 在 mouseover 時我們會處理 data</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> trs = <span class="built_in">document</span>.querySelectorAll(<span class="string">'tr'</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; trs.length; i++) &#123;</span><br><span class="line">    <span class="keyword">var</span> data = ... <span class="comment">// based on trs[i]</span></span><br><span class="line">    tr[i].onmouseover = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        ... <span class="comment">// process data</span></span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Fix</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> trs = <span class="built_in">document</span>.querySelectorAll(<span class="string">'tr'</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; trs.length; i++) &#123;</span><br><span class="line">    <span class="keyword">var</span> data = ... <span class="comment">// based on trs[i]</span></span><br><span class="line">    tr[i].onmouseover = (<span class="function"><span class="keyword">function</span>(<span class="params">d</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            ... <span class="comment">// process d</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)(data);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>之後會講這篇拆散依照主題重新寫過</p>
+
+
+
+        <div class="post__prevs">
+            <div class="post__prev">
+                
+                <a href="/2018/02/26/atom_list/" title="My Atom Packages"><i class="iconfont icon-prev"></i>My Atom Packages</a>
+                
+            </div>
+            <div class="post__prev post__prev--right">
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+        
+        
+            <div id="disqus_thread"></div>
+        
+    </div>
+
+    <aside class="page__sidebar">
+    
+
+    <form id="page-search-from" class="page__search-from" action="/search/">
+        <label class="search-form__item">
+            <input class="input" type="text" name="search" placeholder="Search...">
+            <i class="iconfont icon-search"></i>
+        </label>
+    </form>
+
+    
+        <div class="sidebar__block">
+            <h3 class="block__title">Introduction</h3>
+            <p class="block__text">先不自我介紹了</p>
+        </div>
+    
+
+    <div class="sidebar__block">
+        <h3 class="block__title">Categories</h3>
+        
+    </div>
+    
+    <div class="sidebar__block">
+        <h3 class="block__title">Latest Post</h3>
+        
+        <ul class="block-list latest-post-list">
+            
+                    <li class="latest-post-item">
+                        <a href="/2018/02/26/basic_javascript/" title="Javascript Note">
+                            <div class="item__cover">
+                                <img src="http://www.actiwate.in/wp-content/uploads/2017/08/javascript-logo.jpg" alt="Javascript Note">
+                            </div>
+                            <div class="item__info">
+                                <h3 class="item__title">Javascript Note</h3>
+                                <span class="item__text">2018-02-26</span>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="latest-post-item">
+                        <a href="/2018/02/26/atom_list/" title="My Atom Packages">
+                            <div class="item__cover">
+                                <img src="http://tech-1st.com/wp-content/uploads/2018/02/atom-mark@1200x630.png" alt="My Atom Packages">
+                            </div>
+                            <div class="item__info">
+                                <h3 class="item__title">My Atom Packages</h3>
+                                <span class="item__text">2018-02-26</span>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="latest-post-item">
+                        <a href="/2018/02/26/ngrok/" title="將 localhost 讓朋友看見 - Ngrok">
+                            <div class="item__cover">
+                                <img src="https://i.imgur.com/WjlJ8wl.png" alt="將 localhost 讓朋友看見 - Ngrok">
+                            </div>
+                            <div class="item__info">
+                                <h3 class="item__title">將 localhost 讓朋友看見 - Ngrok</h3>
+                                <span class="item__text">2018-02-26</span>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="latest-post-item">
+                        <a href="/2018/02/14/Google_Chrome_Extensions/" title="Google Chrome Extensions">
+                            <div class="item__cover">
+                                <img src="https://assets.pcmag.com/media/images/454580-best-google-chrome-extensions.png?thumb=y&width=810&height=456" alt="Google Chrome Extensions">
+                            </div>
+                            <div class="item__info">
+                                <h3 class="item__title">Google Chrome Extensions</h3>
+                                <span class="item__text">2018-02-14</span>
+                            </div>
+                        </a>
+                    </li>
+                
+        </ul>
+    
+    </div>
+
+    <div class="sidebar__block">
+        <h3 class="block__title">Tags</h3>
+        
+        <ul class="block-list tag-list clearfix">
+            
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/ATOM/">ATOM</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/Browser/">Browser</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/Hexo/">Hexo</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/Javascript/">Javascript</a>
+                    </li>  
+                
+                    <li class="tag-item">
+                        <a class="tag-link" href="/tags/Web/">Web</a>
+                    </li>  
+                
+        </ul>
+    
+    </div>
+
+    
+</aside>
+</main>
+
+
+        
+            
+<footer class="page__footer">
+    <section class="footer__top">
+        <div class="page__container footer__container">
+            
+            <div class="footer-top__item footer-top__item--2">
+                <h3 class="item__title">About</h3>
+                <div class="item__content">
+                    <p class="item__text">這個部落格主要是拿來紀錄一些學習筆記,<br> 也希望自己能拍攝出好的照片分享給大家.</p>
+                    <ul class="footer__contact-info">
+                        <li class="contact-info__item">
+                            <i class="iconfont icon-address"></i>
+                            <span>Taipei, Taiwan</span>
+                        </li>
+                        <li class="contact-info__item">
+                            <i class="iconfont icon-email2"></i>
+                            <span>bxh.red+blog@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+            
+
+            
+            
+        </div>
+    </section>
+    <section class="footer__bottom">
+        <div class="page__container footer__container">
+            <p class="footer__copyright">
+                Powered by
+                <a href="http://hexo.io/" target="_blank">Hexo</a>
+            </p>
+            <ul class="footer__social-network clearfix">
+                
+                
+                    <li class="social-network__item">
+                        <a href="https://github.com/LJC0915" target="_blank" title="github">
+                            <i class="iconfont icon-github"></i>
+                        </a>
+                    </li>
+                
+                    <li class="social-network__item">
+                        <a href="mailto:bxh.red@gmail.com" target="_blank" title="email">
+                            <i class="iconfont icon-email"></i>
+                        </a>
+                    </li>
+                
+                    <li class="social-network__item">
+                        <a href="/atom.xml" target="_blank" title="rss">
+                            <i class="iconfont icon-rss"></i>
+                        </a>
+                    </li>
+                
+                
+            </ul>
+        </div>
+    </section>
+</footer>
+
+        
+
+        
+            
+<div id="back-top" class="back-top back-top--hidden js-hidden">
+    <i class="iconfont icon-top"></i>
+</div>
+        
+    </div>
+
+    <script src="/js/common.js"></script>
+
+    
+    <script src="/js/page/post.js"></script>
+
+
+    
+    
+
+
+    <script>var disqus_shortname="ljcs-blog",disqus_config=function(){this.page.url="https://LJC0915.github.io/2018/02/26/basic_javascript/",this.page.identifier="/2018/02/26/basic_javascript/",this.page.title="Javascript Note"};!function(){var t=document,s=t.createElement("script");s.src="https://"+disqus_shortname+".disqus.com/embed.js",s.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(s)}()</script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+    
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script></body></html>
