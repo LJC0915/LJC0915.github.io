@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://LJC0915.github.io/"/>
-  <updated>2018-02-27T06:08:23.000Z</updated>
+  <updated>2018-03-01T07:57:08.000Z</updated>
   <id>https://LJC0915.github.io/</id>
   
   <author>
@@ -15,6 +15,79 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>紀錄學習</title>
+    <link href="https://LJC0915.github.io/2018/03/02/Learntips/"/>
+    <id>https://LJC0915.github.io/2018/03/02/Learntips/</id>
+    <published>2018-03-02T07:43:14.000Z</published>
+    <updated>2018-03-01T07:57:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>這邊就跟大家談談我是如何做筆記的</p><h2 id="1-Git-Markdown-筆記"><a href="#1-Git-Markdown-筆記" class="headerlink" title="1. Git + Markdown 筆記"></a>1. Git + Markdown 筆記</h2><p>我會用 markdown 格式寫筆記並用 git 做控管<br>也方便之後查看筆記</p><p>這個 Blog 也是以 markdown 呈現的呢！</p><h2 id="2-List-Card"><a href="#2-List-Card" class="headerlink" title="2. List + Card"></a>2. List + Card</h2><p>這邊我是用 Trello 來施作、、實作的</p><p>首先我都會先拆解我想學得東西並先做成一個 List<br>並在每個 list 中放入 Card<br>Card 紀錄什麼呢？</p><ol><li>學習是查到的連結</li><li>這次學習與之前的差異</li><li>如果發現問題，上次的問題出在哪？</li></ol><p>基本上什麼都能記</p><h4 id="假如我要學數學"><a href="#假如我要學數學" class="headerlink" title="假如我要學數學"></a>假如我要學數學</h4><p>List 就會長這樣</p><ul><li>加法</li><li>減法</li><li>乘法</li><li>除法</li></ul><p>再把每一次的學習狀況紀錄下來放到對應的地方</p><h2 id="3-整理成文章"><a href="#3-整理成文章" class="headerlink" title="3. 整理成文章"></a>3. 整理成文章</h2><p>等到學習都到一個段落時</p><p>回頭審視自己的筆記並將他整理成文章</p><p>然後</p><h3 id="分享給這個世界"><a href="#分享給這個世界" class="headerlink" title="分享給這個世界"></a>分享給這個世界</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;這邊就跟大家談談我是如何做筆記的&lt;/p&gt;
+&lt;h2 id=&quot;1-Git-Markdown-筆記&quot;&gt;&lt;a href=&quot;#1-Git-Markdown-筆記&quot; class=&quot;headerlink&quot; title=&quot;1. Git + Markdown 筆記&quot;&gt;&lt;/a&gt;1. Git +
+      
+    
+    </summary>
+    
+    
+      <category term="Learn" scheme="https://LJC0915.github.io/tags/Learn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>關於學習的一些方法</title>
+    <link href="https://LJC0915.github.io/2018/03/01/TwentyHoursToLearn/"/>
+    <id>https://LJC0915.github.io/2018/03/01/TwentyHoursToLearn/</id>
+    <published>2018-03-01T07:28:32.000Z</published>
+    <updated>2018-03-01T07:44:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>一直以來都想學一些自己覺得很酷的事情，但其實時間也沒有這麼多，<br>就學習一些有效率的學習方法吧</p><pre><code>以下是看了 TED - The first 20 hours how to learn anything 的一些筆記</code></pre><h2 id="開門見山直接說方法"><a href="#開門見山直接說方法" class="headerlink" title="開門見山直接說方法"></a>開門見山直接說方法</h2><ol><li>拆解技能</li><li>學習到能自我修正</li><li>消除學習障礙</li><li>練習</li></ol><h4 id="拆解技能"><a href="#拆解技能" class="headerlink" title="拆解技能"></a>拆解技能</h4><p>將你想學的東西拆解成很小的部分，再去檢視你需要做到什麼地步，去選擇先去學什麼。<br>以吉他為例，你可能只需要學四到五個和弦你就能彈一首歌，<br>但可能吉他的和弦有數百種甚至更多。<br>但其他並不是不重要，而是我們先學最需要的。<br>才能在短視間看到效果。</p><h4 id="學習到能自我修正"><a href="#學習到能自我修正" class="headerlink" title="學習到能自我修正"></a>學習到能自我修正</h4><p>當你能檢視自己的錯誤並能解決，這時候學習就變成一種方法了。</p><h4 id="消除學習障礙"><a href="#消除學習障礙" class="headerlink" title="消除學習障礙"></a>消除學習障礙</h4><p>使自己能專心在學習上每多一秒鐘都是珍貴的</p><h4 id="接著就開始練習吧"><a href="#接著就開始練習吧" class="headerlink" title="接著就開始練習吧"></a>接著就開始練習吧</h4><p>先練個 20 小時試試</p><h2 id="你敢嗎？"><a href="#你敢嗎？" class="headerlink" title="你敢嗎？"></a>你敢嗎？</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;一直以來都想學一些自己覺得很酷的事情，但其實時間也沒有這麼多，&lt;br&gt;就學習一些有效率的學習方法吧&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;以下是看了 TED - The first 20 hours how to learn anything 的一些筆記
+&lt;/code&gt;&lt;/pre&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="Learn" scheme="https://LJC0915.github.io/tags/Learn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我學習的大方向</title>
+    <link href="https://LJC0915.github.io/2018/02/28/Learning%20Direction/"/>
+    <id>https://LJC0915.github.io/2018/02/28/Learning Direction/</id>
+    <published>2018-02-28T06:40:09.000Z</published>
+    <updated>2018-03-01T07:56:25.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>一直以來都想學一些自己覺得很酷的事情，但其實時間也沒有這麼多，<br>那就先學學一些可以讓自己學得更快的方法吧！</p><h2 id="基本技能"><a href="#基本技能" class="headerlink" title="基本技能"></a>基本技能</h2><ol><li>中文速讀</li><li>英文能力</li><li>寫作能力</li><li>分享</li></ol><h4 id="中文速讀"><a href="#中文速讀" class="headerlink" title="中文速讀"></a>中文速讀</h4><p>之前有稍微去了解中文速讀是怎麼回事，<br>其實要加快我們閱讀的速讀就只有一件事要做</p><p><strong>去除腦中的聲音</strong></p><p>其實我們的閱讀速度都受限於看到文字後腦袋中的聲音<br>我想，你試著隨便讀一句話就能了解了<br>至於訓練的方式我就不介紹了<br>我的方法是讓目光移動速度快於腦袋中的聲音就可以了</p><h4 id="英文能力"><a href="#英文能力" class="headerlink" title="英文能力"></a>英文能力</h4><p>由於我不是因為要考試<br>我想我的目標很簡單<br>看得懂我想看的、表達我想表達的<br>所以我也就沒去買任何書<br>用以下幾種方式練習</p><ol><li>看英美劇練習聽力<ul><li>看自己 <em>聽得懂</em> 的劇讓自己習慣語速，你讓我聽俄語我想聽多也不會進步，因為我真的聽不懂…</li></ul></li><li>遇到不會的單子就記下來<ul><li>學會他的發音</li><li>把一系列的單子分類，如果不會分就照詞性</li><li>用它造一個 yes/no 問句問自己<ul><li>名詞呢就用 Can I eat a <code>_____</code> ?</li><li>動詞的話則是 Will I <code>________</code> tomorrow ?</li><li>接下來用手機錄下來並試著回答就能順便練習聽力跟口說</li></ul></li></ul></li><li>寫 readme<ul><li>在 project 上用英文寫 readme</li></ul></li><li>網路討論，網路上現在很少中文討論區了，試著用英文吧！<ul><li>在 stackoverflow 上用英文發問或回答</li><li>在 twoplustwo 上用英文發問或回答</li><li>用英文 open/reply issue</li></ul></li></ol><h4 id="寫作能力"><a href="#寫作能力" class="headerlink" title="寫作能力"></a>寫作能力</h4><p>寫作能把雜亂的思緒收斂，如果你能寫下來並讓看得人明白。最大受益的人其實是自己。<br>透過編寫又整理了一次思緒跟掌握整件事的脈絡，可以培養邏輯能力，</p><h4 id="分享"><a href="#分享" class="headerlink" title="分享"></a>分享</h4><p>你可以分享你所記下來的筆記，學到的東西，程式碼片段，什麼都可以，<br>這並不是可以偽裝或速成的東西，結合寫作所產生的產物也能帶來聲望，<br>讓大家能認識你。<br>你或許很厲害但你沒表現出來，誰知道？</p><h3 id="如果你想要世界看到你，那就站出來。"><a href="#如果你想要世界看到你，那就站出來。" class="headerlink" title="如果你想要世界看到你，那就站出來。"></a>如果你想要世界看到你，那就站出來。</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;一直以來都想學一些自己覺得很酷的事情，但其實時間也沒有這麼多，&lt;br&gt;那就先學學一些可以讓自己學得更快的方法吧！&lt;/p&gt;
+&lt;h2 id=&quot;基本技能&quot;&gt;&lt;a href=&quot;#基本技能&quot; class=&quot;headerlink&quot; title=&quot;基本技能&quot;&gt;&lt;/a&gt;基本技能&lt;/h2&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="Learn" scheme="https://LJC0915.github.io/tags/Learn/"/>
+    
+  </entry>
   
   <entry>
     <title>十個小訣竅讓你成為更好的玩家</title>
