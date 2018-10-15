@@ -1,0 +1,116 @@
+html,
+body {
+  overflow: hidden;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", "Hiragino Sans GB", "LiHei Pro",
+    Arial, sans-serif;
+  color: #333;
+}
+
+.wrapper {
+  background: #e9e2d0;
+  width: 320px;
+  text-align: center;
+  padding: 15px;
+  display: inline-block;
+  margin: 10px;
+}
+
+h1 {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+  margin: 12px 0;
+  left: 4px;
+  color: #20716a;
+}
+
+h2 {
+  color: #999;
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  margin-bottom: 30px;
+  left: 3px;
+  color: #f4a9c7;
+}
+
+h1,
+h2 {
+  position: relative;
+}
+
+div.button {
+  background: #20716a;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 2em;
+  margin: 10px auto;
+  width: 120px;
+  letter-spacing: 2px;
+}
+
+div.gitlab {
+  background: #e8630a;
+}
+
+div.eip {
+  background: #235784;
+}
+div.api {
+  background: #333;
+}
+div.dinbendon {
+  background: #a1c45a;
+}
+div.ptt {
+  background: #f6c523;
+}
+div.errol {
+  background: #20716a;
+}
+
+div.youtube {
+  background: #be3737;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #23a393;
+}
+
+.container {
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-around;
+}
