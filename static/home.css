@@ -5,8 +5,7 @@ body {
 }
 
 body {
-  font-family: "Open Sans", "Helvetica Neue", "Hiragino Sans GB", "LiHei Pro",
-    Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Hiragino Sans GB", "LiHei Pro", Arial, sans-serif;
   color: #333;
 }
 
@@ -93,6 +92,8 @@ a:hover {
   padding: 15px;
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .container {
@@ -113,4 +114,39 @@ a:hover {
 .d-flex {
   display: flex;
   justify-content: space-around;
+}
+
+.topbar {
+  background: #20716a;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.datewrap {
+  height: 40px;
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+  color: #eee;
+}
+
+.day {
+  font-size: 40px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+.time {
+  height: 40px;
+  color: #eee;
+  margin-right: 70px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
 }
