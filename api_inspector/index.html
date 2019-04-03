@@ -6,7 +6,7 @@
 -->
 <html>
   <head>
-    <title>Spectral by HTML5 UP</title>
+    <title>Api Inspector</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -17,18 +17,14 @@
     <div id="page-wrapper">
       <!-- Header -->
       <header id="header" class="alt">
-        <h1><a href="index.html">Spectral</a></h1>
+        <h1><a href="index.html">Api Inspector</a></h1>
         <nav id="nav">
           <ul>
             <li class="special">
-              <a href="#menu" class="menuToggle"><span>Menu</span></a>
+              <a href="#menu" class="menuToggle"><span>Do not click</span></a>
               <div id="menu">
                 <ul>
-                  <li><a href="#">其實什麼都沒有</a></li>
-                  <!-- <li><a href="generic.html">Generic</a></li>
-                  <li><a href="elements.html">Elements</a></li>
-                  <li><a href="#">Sign Up</a></li>
-                  <li><a href="#">Log In</a></li> -->
+                  <li><a href="#">不是叫你別點嗎？</a></li>
                 </ul>
               </div>
             </li>
@@ -44,14 +40,14 @@
             Design By Errol
           </p>
           <ul class="actions special">
-            <li><a href="#" class="button primary">Download</a></li>
+            <li><a id="downloadLink" href="#" class="button primary equalBtn">macOS</a></li>
           </ul>
         </div>
-        <a href="#one" class="more scrolly">Learn More</a>
+        <!-- <a href="#one" class="more scrolly">Learn More</a> -->
       </section>
 
       <!-- One -->
-      <section id="one" class="wrapper style1 special">
+      <!-- <section id="one" class="wrapper style1 special">
         <div class="inner">
           <header class="major">
             <h2>
@@ -75,10 +71,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Two -->
-      <section id="two" class="wrapper alt style2">
+      <!-- <section id="two" class="wrapper alt style2">
         <section class="spotlight">
           <div class="image"><img src="images/pic01.jpg" alt="" /></div>
           <div class="content">
@@ -118,10 +114,10 @@
             </p>
           </div>
         </section>
-      </section>
+      </section> -->
 
       <!-- Three -->
-      <section id="three" class="wrapper style3 special">
+      <!-- <section id="three" class="wrapper style3 special">
         <div class="inner">
           <header class="major">
             <h2>Accumsan mus tortor nunc aliquet</h2>
@@ -175,10 +171,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- CTA -->
-      <section id="cta" class="wrapper style4">
+      <!-- <section id="cta" class="wrapper style4">
         <div class="inner">
           <header>
             <h2>Arcue ut vel commodo</h2>
@@ -189,10 +185,10 @@
             <li><a href="#" class="button fit">Learn More</a></li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Footer -->
-      <footer id="footer">
+      <!-- <footer id="footer">
         <ul class="icons">
           <li>
             <a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a>
@@ -215,9 +211,17 @@
           <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
         </ul>
       </footer>
-    </div>
+    </div> -->
 
     <!-- Scripts -->
+    <script>
+      const os = navigator.userAgent.toLocaleLowerCase().indexOf("windows");
+      const downloadLink = document.querySelector("#downloadLink");
+      if (os > 0) {
+        downloadLink.textContent = "Windows";
+        downloadLink.href = "!!!!";
+      }
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
