@@ -31,7 +31,10 @@
             <a href="https://github.com/xteamstudio/team-wiki" target="_blank">
               <div class="button api">team-wiki</div>
             </a>
-            <a href="https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+user%3Axteamstudio" target="_blank">
+            <a
+              href="https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+user%3Axteamstudio"
+              target="_blank"
+            >
               <div class="button api">Code-Review</div>
             </a>
             <a href="https://dinbendon.net/do/" target="_blank">
@@ -42,10 +45,16 @@
             <a href="https://github.com/xteamstudio/noah-admin" target="_blank">
               <div class="button api">noah-admin</div>
             </a>
-            <a href="https://github.com/xteamstudio/noah-admin/issues" target="_blank">
+            <a
+              href="https://github.com/xteamstudio/noah-admin/issues"
+              target="_blank"
+            >
               <div class="button api">Issues</div>
             </a>
-            <a href="https://github.com/xteamstudio/noah-admin/pulls" target="_blank">
+            <a
+              href="https://github.com/xteamstudio/noah-admin/pulls"
+              target="_blank"
+            >
               <div class="button api">Pull requests</div>
               <a href="http://35.221.128.10/swagger-ui.html" target="_blank">
                 <div class="button dinbendon">Swagger - Ark biz</div>
@@ -53,7 +62,10 @@
               <a href="http://34.80.207.77/swagger-ui.html#" target="_blank">
                 <div class="button dinbendon">Swagger - Ark user</div>
               </a>
-              <a href="http://35.189.183.121/swagger-ui.html#/Lotto_Report_API" target="_blank">
+              <a
+                href="http://35.189.183.121/swagger-ui.html#/Lotto_Report_API"
+                target="_blank"
+              >
                 <div class="button dinbendon">Swagger - Lotto Report</div>
               </a>
               <a href="http://34.80.156.80/swagger-ui.html#/" target="_blank">
@@ -82,9 +94,6 @@
             <a href="https://www.facebook.com/" target="_blank">
               <div class="button eip">Facebook</div>
             </a>
-            <a href="https://www.zhihu.com/" target="_blank">
-              <div class="button eip">ZhiHu</div>
-            </a>
             <a href="https://www.youtube.com/" target="_blank">
               <div class="button youtube">YouTube</div>
             </a>
@@ -102,11 +111,11 @@
     const year = document.querySelector(".year");
     const time = document.querySelector(".time");
 
-    time.innerHTML = new Date().toLocaleString("en-US", {hour: "numeric"});
+    time.innerHTML = new Date().toLocaleString("en-US", { hour: "numeric" });
     function setDate() {
       const now = new Date();
       day.innerHTML = now.getDate();
-      month.innerHTML = now.toLocaleString("en-US", {month: "short"});
+      month.innerHTML = now.toLocaleString("en-US", { month: "short" });
       year.innerHTML = now.getFullYear();
       time.innerHTML = `${now.getHours()} : ${now.getMinutes()}`;
     }
