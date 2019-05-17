@@ -21,50 +21,128 @@
     </div>
     <div class="container">
       <div class="wrapper">
-        <h1>WORK</h1>
-        <h2>X Team Studio</h2>
+        <h1>X Team Studio</h1>
+        <h2>GLOBAL</h2>
         <div class="d-flex ">
           <div>
             <a href="https://github.com/xteamstudio" target="_blank">
-              <div class="button api">Github</div>
+              <div class="button api">X TEAM<br />Github</div>
             </a>
             <a href="https://github.com/xteamstudio/team-wiki" target="_blank">
-              <div class="button api">team-wiki</div>
+              <div class="button api">X TEAM <br />WIKI</div>
             </a>
             <a
-              href="https://www.xteamstudio.com/team-wiki/API_Platform/index.html#g=1&p=%E7%9B%AE%E9%8C%84"
+              href="https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+user%3Axteamstudio"
               target="_blank"
             >
-              <div class="button api">team-doc</div>
-            </a>
-            <a href="https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+user%3Axteamstudio" target="_blank">
-              <div class="button api">Code-Review</div>
+              <div class="button api">Code Review<br />All Prs</div>
             </a>
             <a href="https://dinbendon.net/do/" target="_blank">
               <div class="button dinbendon">DinBenDon</div>
             </a>
           </div>
           <div>
+            <a href="http://35.221.128.10/swagger-ui.html" target="_blank">
+              <div class="button dinbendon">
+                Swagger <br />
+                Ark biz
+              </div>
+            </a>
+            <a href="http://34.80.207.77/swagger-ui.html#" target="_blank">
+              <div class="button dinbendon">
+                Swagger <br />
+                Ark user
+              </div>
+            </a>
+            <a
+              href="http://35.189.183.121/swagger-ui.html#/Lotto_Report_API"
+              target="_blank"
+            >
+              <div class="button dinbendon">
+                Swagger <br />
+                Lotto Report
+              </div>
+            </a>
+            <a href="http://34.80.156.80/swagger-ui.html#/" target="_blank">
+              <div class="button dinbendon">
+                Swagger <br />
+                Lotto Api
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <h1>X Team Studio</h1>
+        <h2>PROJECT</h2>
+        <div class="d-flex ">
+          <div>
+            <a href="https://github.com/xteamstudio/xts-admin" target="_blank">
+              <div class="button api">xts-admin</div>
+            </a>
+            <a
+              href="https://github.com/xteamstudio/xts-admin/issues"
+              target="_blank"
+            >
+              <div class="button api">xts-admin<br />Issues</div>
+            </a>
+            <a
+              href="https://github.com/xteamstudio/xts-admin/pulls"
+              target="_blank"
+            >
+              <div class="button api">xts-admin<br />Pull requests</div>
+            </a>
+            <a
+              href="https://github.com/xteamstudio/xts-admin/issues#zenhub"
+              target="_blank"
+            >
+              <div class="button api">xts-admin<br />Zen Hub</div>
+            </a>
+          </div>
+          <div>
             <a href="https://github.com/xteamstudio/noah-admin" target="_blank">
               <div class="button api">noah-admin</div>
             </a>
-            <a href="https://github.com/xteamstudio/noah-admin/issues" target="_blank">
-              <div class="button api">Issues</div>
+            <a
+              href="https://github.com/xteamstudio/noah-admin/issues"
+              target="_blank"
+            >
+              <div class="button api">noah-admin<br />Issues</div>
             </a>
-            <a href="https://github.com/xteamstudio/noah-admin/pulls" target="_blank">
-              <div class="button api">Pull requests</div>
-              <a href="http://35.221.128.10/swagger-ui.html" target="_blank">
-                <div class="button dinbendon">Swagger - Ark biz</div>
-              </a>
-              <a href="http://34.80.207.77/swagger-ui.html#" target="_blank">
-                <div class="button dinbendon">Swagger - Ark user</div>
-              </a>
-              <a href="http://35.189.183.121/swagger-ui.html#/Lotto_Report_API" target="_blank">
-                <div class="button dinbendon">Swagger - Lotto Report</div>
-              </a>
-              <a href="http://34.80.156.80/swagger-ui.html#/" target="_blank">
-                <div class="button dinbendon">Swagger - Lotto Api</div>
-              </a>
+            <a
+              href="https://github.com/xteamstudio/noah-admin/pulls"
+              target="_blank"
+            >
+              <div class="button api">noah-admin<br />Pull requests</div>
+            </a>
+            <a
+              href="https://github.com/xteamstudio/noah-admin/issues#zenhub"
+              target="_blank"
+            >
+              <div class="button api">noah-admin<br />Zen Hub</div>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/xteamstudio/noah-admin" target="_blank">
+              <div class="button api">noah-admin</div>
+            </a>
+            <a
+              href="https://github.com/xteamstudio/noah-admin/issues"
+              target="_blank"
+            >
+              <div class="button api">noah-admin<br />Issues</div>
+            </a>
+            <a
+              href="https://github.com/xteamstudio/noah-admin/pulls"
+              target="_blank"
+            >
+              <div class="button api">noah-admin<br />Pull requests</div>
+            </a>
+            <a
+              href="https://github.com/xteamstudio/noah-admin/issues#zenhub"
+              target="_blank"
+            >
+              <div class="button api">noah-admin<br />Zen Hub</div>
             </a>
           </div>
         </div>
@@ -105,11 +183,11 @@
     const year = document.querySelector(".year");
     const time = document.querySelector(".time");
 
-    time.innerHTML = new Date().toLocaleString("en-US", {hour: "numeric"});
+    time.innerHTML = new Date().toLocaleString("en-US", { hour: "numeric" });
     function setDate() {
       const now = new Date();
       day.innerHTML = now.getDate();
-      month.innerHTML = now.toLocaleString("en-US", {month: "short"});
+      month.innerHTML = now.toLocaleString("en-US", { month: "short" });
       year.innerHTML = now.getFullYear();
       time.innerHTML = `${now.getHours()} : ${now.getMinutes()}`;
     }

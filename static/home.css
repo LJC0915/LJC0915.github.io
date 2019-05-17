@@ -5,13 +5,14 @@ body {
 }
 
 body {
-  font-family: "Open Sans", "Helvetica Neue", "Hiragino Sans GB", "LiHei Pro", Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Hiragino Sans GB", "LiHei Pro",
+    Arial, sans-serif;
   color: #333;
 }
 
 .wrapper {
   background: #e9e2d0;
-  width: 320px;
+  width: 400px;
   text-align: center;
   padding: 15px;
   display: inline-block;
@@ -36,7 +37,7 @@ h2 {
   letter-spacing: 0.12em;
   margin-bottom: 30px;
   left: 3px;
-  color: #f4a9c7;
+  color: #b31e6f;
 }
 
 h1,
@@ -49,7 +50,7 @@ div.button {
   border-radius: 5px;
   font-size: 14px;
   line-height: 2em;
-  margin: 10px auto;
+  margin: 10px 10px;
   width: 130px;
   letter-spacing: 2px;
 }
